@@ -13,7 +13,7 @@ import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 export const testimonials = [
   {
     quote:
-      "Chris Mazimpaka leads AI4Impact with a unique blend of leadership, advanced math and top-notch programming skills. He transforms complex challenges into innovative AI solutions, inspiring the team to push boundaries and make an impact",
+      "Chris Mazimpaka leads AI4Impact with a unique blend of leadership, advanced math and top-notch programming skills. He transforms complex challenges into innovative  solutions, inspiring the team to push boundaries and make an impact",
     name: "Prince Chris Mazimpaka",
     title: "President & AI engineer",
     image: PrinceChris,
