@@ -41,7 +41,7 @@ export const CallToAction = () => {
             <Planet size="sm" color="fuchsia" className="translate-x-[400px] translate-y-[150px]  -rotate-45" />
           </div>
           <h2 className="text-gray-200 font-semibold text-3xl md:text-4xl lg:text-5xl max-w-3xl mx-auto text-center leading-tight">
-            Join the AI Revoltion with {" "}
+            Join the AI Revolution with {" "}
             <span className="relative isolate">
               <span>AI4Impact</span>
               <span className="absolute top-full left-0 w-full h-4 bg-[linear-gradient(to_right,var(--color-amber-300),var(--color-teal-300),var(--color-violet-400),var(--color-fuchsia-400))]"
