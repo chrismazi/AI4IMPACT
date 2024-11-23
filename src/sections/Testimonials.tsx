@@ -44,7 +44,7 @@ export const testimonials = [
 
 const SELECTED_TESTIMONIAL_INDEX = 0;
 export const Testimonials = () => {
-  return <section>
+  return <section id="team">
     <div className="container">
       <SectionBorder borderTop>
         <SectionContent>

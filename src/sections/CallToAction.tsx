@@ -9,7 +9,7 @@ import { Planet } from "@/components/Planet";
 
 export const CallToAction = () => {
   return (
-  <section>
+  <section id="involve">
     <div className="container">
       <SectionBorder borderTop>
         <SectionContent className="relative isolate">

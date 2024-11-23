@@ -10,7 +10,7 @@ import { SectionContent } from "@/components/SectionContent";
 
 export const Hero = () => {
   return (
-    <section>
+    <section id="impact">
       <div className="container">
         <SectionBorder>
           <SectionContent className="relative isolate  [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
