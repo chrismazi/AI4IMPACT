@@ -6,25 +6,26 @@ import { Orbit } from "@/components/Orbit";
 
 export const navItems = [
   {
-    name: "Features",
-    href: "#features",
+    name: "Our Impact ",
+    href: "#impact",
   },
   {
-    name: "Pricing",
-    href: "#pricing",
+    name: "Mission",
+    href: "#mission",
+  },
+  
+  {
+    name: "Team",
+    href: "#team",
   },
   {
-    name: "Testimonials",
-    href: "#testimonials",
+    name: "Get Involved",
+    href: "#",
   },
 ];
 
 export const loginItems = [
-  {
-    buttonVariant: "tertiary",
-    name: "Login",
-    href: "#login",
-  },
+  
   {
     buttonVariant: "primary",
     name: "Sign Up",

@@ -8,12 +8,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const navItems = [
   {
-    name: "Features",
+    name: "Our Impact ",
     href: "#features",
   },
   {
-    name: "Pricing",
-    href: "#pricing",
+    name: "Mission",
+    href: "#mission",
   },
   {
     name: "Team",
