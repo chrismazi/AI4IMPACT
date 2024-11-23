@@ -1,10 +1,12 @@
 // File: components/Companies.tsx
-
+'use client';
 import Image from "next/image";
 import UnipodLogo from "../assets/images/unipod.png";
 import Urlogo from "../assets/images/urlogo.webp";
 import { SectionBorder } from "@/components/SectionBorder";
 import { SectionContent } from "@/components/SectionContent";
+import {motion} from 'framer-motion';
+
 
 // List of companies with their names and logo imports
 export const companies = [
@@ -28,9 +30,18 @@ export const Companies = () => {
               Inspiring students to make an impact with AI.
             </h2>
             <div className="flex mt-20 overflow-x-clip -mx-4 lg:-mx-8">
-              <div className="flex flex-none gap-18 md:gap-36 px-18">
+              <motion.div 
+              initial = {{ x: 0}}
+              animate = {{x: '-50%'}}
+              transition={{
+
+                repeat: Infinity,
+                ease: "linear",
+                duration: 15,
+              }}
+              className="flex flex-none gap-18 md:gap-36 px-9 md:px-18">
                 {/* Loop through an array of 6 items (to repeat the pattern of logos) */}
-                {[...Array(6)].map((_, index) => {
+                {[...Array(12)].map((_, index) => {
                   const company = companies[index % companies.length]; // Alternate between the two logos
                   return (
                     <div key={index}>
@@ -44,7 +55,7 @@ export const Companies = () => {
                     </div>
                   );
                 })}
-              </div>
+              </motion.div>
             </div>
           </SectionContent>
         </SectionBorder>
