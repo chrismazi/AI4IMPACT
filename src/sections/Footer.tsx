@@ -16,12 +16,12 @@ export const navItems = [
     href: "#pricing",
   },
   {
-    name: "Testimonials",
+    name: "Team",
     href: "#testimonials",
   },
   {
-    name: "Login",
-    href: "#login",
+    name: "Sign Up",
+    href: "#",
   },
 ];
 

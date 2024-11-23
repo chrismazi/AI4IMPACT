@@ -2,7 +2,7 @@
 import React from "react";
 import PrinceChris from "@/assets/images/prince.png";
 import ShyakaFrank from "@/assets/images/shyaka.png";
-import Nyirazo from "@/assets/images/rene-wells.jpg";
+import Arlette from "@/assets/images/arlette.png";
 import DismasM from "@/assets/images/dis.png";
 import { SectionBorder } from "@/components/SectionBorder";
 import { SectionContent } from "@/components/SectionContent";
@@ -13,7 +13,7 @@ import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 export const testimonials = [
   {
     quote:
-      "Chris Mazimpaka leads AI4Impact with a unique blend of leadership, advanced math expertise, and top-notch programming skills. He transforms complex challenges into innovative AI solutions, inspiring the team to push boundaries and make an impact",
+      "Chris Mazimpaka leads AI4Impact with a unique blend of leadership, advanced math and top-notch programming skills. He transforms complex challenges into innovative AI solutions, inspiring the team to push boundaries and make an impact",
     name: "Prince Chris Mazimpaka",
     title: "President & AI engineer",
     image: PrinceChris,
@@ -28,9 +28,9 @@ export const testimonials = [
   {
     quote:
       "Our Community Manager builds strong connections with people and organizations. They make sure AI4Impact grows as a team and stays inspired by new ideas",
-    name: "Nyirazo Adrien",
+    name: "Igihozo Arlette",
     title: "Community Manager/Outreach Lead",
-    image: Nyirazo,
+    image: Arlette,
   },
   {
     quote:
