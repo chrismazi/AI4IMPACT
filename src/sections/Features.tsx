@@ -1,3 +1,5 @@
+'use client';
+
 import slackLogo from "../assets/images/slack-logo.png";
 import dockerLogo from "../assets/images/docker-logo.png";
 import figmaLogo from "../assets/images/figma-logo.png";
@@ -14,6 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { Logo } from "@/components/Logo";
 import Image from "next/image";
+import {motion} from 'framer-motion';
 
 export const features = [
   "Learn AI through Real-World Projects",
@@ -65,22 +68,41 @@ export const Features = () => {
                 <Logo className="size-24" />
               </div>
               {logos.map(({ src, alt, rotate }) => (
-                <div
+                <motion.div
                   key={alt} // Correct key placement
                   className="absolute inset-0"
-                  style={{
-                    transform: `rotate(${rotate}deg)`,
+                  initial = {{
+                    rotate: rotate,
                   }}
+                  animate={{
+                    rotate: [rotate,
+                      rotate + 45, rotate + 45,rotate + 90, rotate + 90,rotate + 135, rotate + 135,rotate + 180 , rotate + 180, rotate + 225, rotate+ 225, rotate + 270, rotate + 270,rotate + 315, rotate+ 315, rotate + 360, rotate + 360],
+                  }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 10,
+                  }}
+                  
                 >
-                  <div
+                  <motion.div
                     className="inline-flex size-10 md:size-14 items-center justify-center border-[var(--color-border)] rounded-lg absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-950"
-                    style={{
-                      transform: `translate(-50%, -50%) rotate(-${rotate}deg)`,
+                    initial={{
+                      translate: "-50% -50%",
+                      rotate: -rotate,
                     }}
+                    animate={{
+                      rotate: [-rotate,
+                        -rotate - 45, -rotate - 45,-rotate - 90, -rotate - 90,-rotate - 135, -rotate - 135,-rotate - 180 , -rotate - 180, -rotate - 225, -rotate- 225, -rotate - 270, -rotate - 270,-rotate - 315, -rotate- 315, -rotate - 360, -rotate - 360]
+                    }}
+                    transition={{
+                      repeat: Infinity,
+                      duration: 10,
+                    }}
+                    
                   >
                     <Image src={src} alt={alt} className="size-6 md:size-9" />
-                  </div>
-                </div>
+                  </motion.div>
+                </motion.div>
               ))}
             </div>
             </div>
