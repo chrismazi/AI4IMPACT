@@ -44,7 +44,7 @@ export const Features = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
               <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-200 leading-tight">
-              Your Gateway to Real-World AI4Impact
+              Your Gateway to Real-World AI Impact
             </h2>
             <ul className="mt-12 flex flex-col gap-8">
               {features.map((feature) => (
