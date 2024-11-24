@@ -14,7 +14,7 @@ import {motion, AnimatePresence, LayoutGroup} from 'framer-motion';
 export const testimonials = [
   {
     quote:
-      "Chris Mazimpaka leads AI4Impact with a unique blend of leadership, advanced math and top-notch programming skills. He transforms complex challenges into innovative  solutions, inspiring the team to push boundaries, forge meaningful partnerships  and make an impact",
+      "Chris Mazimpaka leads AI4Impact with a unique blend of leadership, advanced math and top-notch programming skills. He transforms complex challenges into innovative  solutions, inspiring the team to push boundaries, forge meaningful partnerships  and make an impact.",
     name: "Prince Chris Mazimpaka",
     title: "Team lead & AI engineer",
     image: PrinceChris,
@@ -28,7 +28,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Our Community Manager builds strong connections with people and organizations. They make sure AI4Impact grows as a team and stays inspired by new ideas",
+      "Our Community Manager builds strong connections with people and organizations. They make sure AI4Impact grows as a team and stays inspired by new ideas.",
     name: "Igihozo Arlette",
     title: "Community Manager/Outreach Lead",
     image: Arlette,
