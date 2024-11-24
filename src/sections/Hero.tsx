@@ -2,7 +2,7 @@ import robotImg from "@/assets/images/robot.jpg";
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import underlineImage from "@/assets/images/underline.svg?url";
-import Loader from "@/assets/images/loader.svg";
+import Loader from "@/assets/images/loader-animated.svg";
 import { Orbit } from "@/components/Orbit";
 import { Planet } from "@/components/Planet";
 import { SectionBorder } from "@/components/SectionBorder";
