@@ -54,7 +54,7 @@ export const Features = () => {
                 </li>
               ))}
             </ul>
-            <Button className="mt-16">Get started</Button>
+            <Button className="mt-16" href="https://forms.gle/Rxy64nUVpxVmekEd9">Get started</Button>
             </div>
             <div className="flex justify-center ">
             <div className="size-[270px] md:size-[450px] relative flex-shrink-0">

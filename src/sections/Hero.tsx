@@ -62,7 +62,7 @@ export const Hero = () => {
               challenges, from agriculture to education, health, and beyond.
             </p>
             <div className="flex justify-center">
-              <Button variant="secondary" className="mt-10">
+              <Button variant="secondary" className="mt-10"  href="https://forms.gle/Rxy64nUVpxVmekEd9">
                 Get Started
               </Button>
             </div>

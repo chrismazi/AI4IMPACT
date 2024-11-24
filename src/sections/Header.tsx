@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 import { Button, ButtonProps } from "@/components/Button";
@@ -28,7 +28,7 @@ export const loginItems = [
   {
     buttonVariant: "primary",
     name: "Sign Up",
-    href: "#sign-up",
+    href: "https://forms.gle/F3UoFpMeS83YEyFR9", // Updated link
   },
 ] satisfies {
   name: string;
@@ -50,7 +50,7 @@ export const Header = () => {
       const timeElapsed = currentTime - startTime;
       const progress = Math.min(timeElapsed / duration, 1);
 
-      const ease = (t: number) => 
+      const ease = (t: number) =>
         t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
 
       window.scrollTo(0, startPosition + distance * ease(progress));
@@ -71,7 +71,7 @@ export const Header = () => {
     if (targetElement) {
       setIsMobileNavOpen(false);
 
-      const headerOffset = 80; 
+      const headerOffset = 80;
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
@@ -105,7 +105,12 @@ export const Header = () => {
             </div>
             <div className="hidden lg:flex gap-4">
               {loginItems.map(({ buttonVariant, name, href }) => (
-                <a href={href} key={name}>
+                <a
+                  href={href}
+                  key={name}
+                  target="_blank" // Open the link in a new tab
+                  rel="noopener noreferrer" // Security enhancement
+                >
                   <Button variant={buttonVariant}>{name}</Button>
                 </a>
               ))}
@@ -113,13 +118,23 @@ export const Header = () => {
             <div className="flex items-center lg:hidden">
               <button
                 className="size-10 rounded-lg border-2 border-transparent [background:linear-gradient(var(--color-gray-950),var(--color-gray-950))_content-box,conic-gradient(from_45deg,var(--color-violet-400),var(--color-fuchsia-400),var(--color-amber-300),var(--color-teal-300),var(--color-violet-400))_border-box] relative"
-                onClick={() => setIsMobileNavOpen(curr => !curr)}
+                onClick={() => setIsMobileNavOpen((curr) => !curr)}
               >
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <div className={twMerge("w-4 h-0.5 bg-gray-100 -translate-y-1 transition duration-300", isMobileNavOpen && 'translate-y-0 rotate-45')}></div>
+                  <div
+                    className={twMerge(
+                      "w-4 h-0.5 bg-gray-100 -translate-y-1 transition duration-300",
+                      isMobileNavOpen && "translate-y-0 rotate-45"
+                    )}
+                  ></div>
                 </div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <div className={twMerge("w-4 h-0.5 bg-gray-100 translate-y-1 transition duration-300", isMobileNavOpen && 'translate-y-0 -rotate-45')}></div>
+                  <div
+                    className={twMerge(
+                      "w-4 h-0.5 bg-gray-100 translate-y-1 transition duration-300",
+                      isMobileNavOpen && "translate-y-0 -rotate-45"
+                    )}
+                  ></div>
                 </div>
               </button>
             </div>
@@ -132,17 +147,17 @@ export const Header = () => {
             <Orbit />
           </div>
           <div className="absolute-center isolate -z-10">
-        <Orbit className="size-[350px]"/>
-      </div>
-      <div className="absolute-center isolate -z-10">
-        <Orbit className="size-[500px]" />
-      </div>
-      <div className="absolute-center isolate -z-10">
-        <Orbit className="size-[650px]"/>
-      </div>
-      <div className="absolute-center isolate -z-10">
-        <Orbit className="size-[800px]"/>
-      </div>
+            <Orbit className="size-[350px]" />
+          </div>
+          <div className="absolute-center isolate -z-10">
+            <Orbit className="size-[500px]" />
+          </div>
+          <div className="absolute-center isolate -z-10">
+            <Orbit className="size-[650px]" />
+          </div>
+          <div className="absolute-center isolate -z-10">
+            <Orbit className="size-[800px]" />
+          </div>
           <div className="container h-full">
             <nav className="flex flex-col items-center gap-4 py-8 h-full justify-center">
               {navItems.map(({ name, href }) => (
@@ -156,8 +171,16 @@ export const Header = () => {
                 </a>
               ))}
               {loginItems.map(({ buttonVariant, name, href }) => (
-                <a href={href} key={name} className="w-full max-w-xs">
-                  <Button block variant={buttonVariant}>{name}</Button>
+                <a
+                  href={href}
+                  key={name}
+                  className="w-full max-w-xs"
+                  target="_blank" // Open the link in a new tab
+                  rel="noopener noreferrer" // Security enhancement
+                >
+                  <Button block variant={buttonVariant}>
+                    {name}
+                  </Button>
                 </a>
               ))}
             </nav>

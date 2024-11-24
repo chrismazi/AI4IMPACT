@@ -58,7 +58,7 @@ export const CallToAction = () => {
           Shape the future with AI4Impact. Be part of a community driving innovation in AI to tackle global challenges. Together, we can create solutions that make a real difference.
           </p>
           <div className="flex justify-center mt-10">
-          <Button variant="secondary">Get Started</Button>
+          <Button variant="secondary" href="https://forms.gle/Rxy64nUVpxVmekEd9">Get Started</Button>
           </div>
         </SectionContent>
       </SectionBorder>

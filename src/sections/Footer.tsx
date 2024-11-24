@@ -20,7 +20,7 @@ export const navItems = [
   },
   {
     name: "Sign Up",
-    href: "#sign-up",
+    href: "https://forms.gle/F3UoFpMeS83YEyFR9", // Updated link
   },
 ];
 
@@ -78,11 +78,11 @@ export const Footer = () => {
     const targetElement = document.querySelector(href);
 
     if (targetElement) {
-      const headerOffset = 80; 
+      const headerOffset = 80;
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
-      // custom smooth scroll function with 800ms duration
+      // Custom smooth scroll function with 800ms duration
       smoothScroll(offsetPosition, 800);
     }
   };
@@ -98,7 +98,9 @@ export const Footer = () => {
                 href={href}
                 key={href}
                 className="uppercase text-xs tracking-widest font-bold text-gray-400"
-                onClick={(e) => scrollToSection(e, href)}
+                onClick={(e) => name === "Sign Up" ? null : scrollToSection(e, href)}
+                target={name === "Sign Up" ? "_blank" : undefined} // Open "Sign Up" link in a new tab
+                rel={name === "Sign Up" ? "noopener noreferrer" : undefined}
               >
                 {name}
               </a>
